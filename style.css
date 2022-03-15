@@ -61,7 +61,7 @@ h1 {
 }
 
 h2 {
-    font-size: var(--font-regular);
+    font-size: var(--font-medium);
     font-weight: var(--weight-semi-bold);
     color: var(--color-dracular-black);
     margin: 8px 0px;
@@ -341,4 +341,28 @@ p{
     margin-top: 8px;
     background-color: var(--color-light-grey);
     color: floralwhite;
+}
+
+/* Contact */
+#contact {
+    background-color: var(--color-first-date);
+}
+.contact__title,
+.contact__email {
+    color: floralwhite;
+} 
+.contact__title {
+    margin: 32px 0;
+}
+.contact__email {
+
+}
+.contact__links {
+    font-size: var(--font-large);
+    margin: 24px 0;
+    transition: all 300ms ease-in;
+}
+.contact__links i:hover {
+    transform: scale(1.1);
+    color: var(--color-sour-lemon);
 }
