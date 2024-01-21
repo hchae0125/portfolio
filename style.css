@@ -1,7 +1,7 @@
 :root {
     /* App Color */
     --color-primary: var(--color-black);
-    --color-primary-variant: var(--color-grey);
+    --color-primary-variant: var(--color-gray);
     --color-accent: var(--color-blue);
     --color-accent-variant: var(--color-orange);
     --color-text: var(--color-white);
@@ -72,7 +72,26 @@ button {
     outline: none;
 }
 
+/* Section common */
+.section {
+    padding: 4rem;
+    text-align: center;
+}
 
+.title {
+    font-size: 2.5rem;
+    margin: 1rem 0;
+}
+
+.description {
+    font-size: 1.3rem;
+    margin:0.5rem 0;
+}
+
+.section__container {
+    max-width: 1200px;
+    margin: auto;
+}
 
 
 /* Nav */
@@ -162,122 +181,128 @@ button {
     font-weight: bold;
 }
 
-/* Section common */
-.section {
-    padding: 50px;
-    text-align: center;
-    margin: auto;
-   
-}
-.section__container {
-    max-width: 1200px;
-    margin: auto;
-}
-
 /* About */
 .about__majors {
     display: flex;
     justify-content: space-between;
-    margin: 80px 0;
+    gap: 8rem;
+    margin: 2.5rem 0;
 }
-.major__icon {
-    width: 170px;
-    height: 170px;
-    font-size: 70px;
-    line-height: 170px;
-    margin: auto;
-    border: 1px solid var(--color-exodus-purple);
-    color: var(--color-exodus-purple);
-    border-radius: 50%;
-    margin-bottom: 16px;
-}
-.major__icon i {
-    transition: all 300ms ease;
-}
-.major__icon:hover i {
-    color: var(--color-shy-purple);
-    transform: rotate(-30deg) scale(1.3);
 
+.major {
+    background-color: var(--color-primary-variant);
+    color: var(--color-text);
+    padding: 2rem 1rem;
+    border-radius: 1rem;
+    cursor: default;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.6);
+    width: 100%;
+}
+
+.major__icon {
+    font-size: 4rem;
+    margin: 1rem 0;
+    color: var(--color-accent);
+    transition: all 300ms ease;
 }
 
 .major__title {
-    font-weight: 600;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
 }
 
-.major__title, .major__description {
-    color: var(--color-dark-grey);
+.major:hover .major__icon {
+    transform: rotate(-15deg) scale(1.3);
 }
 
 .job {
     display: flex;
     align-items: center;
+    margin-bottom: 1rem;
 }
 .job__logo {
     width: 50px;
 }
 .job__description {
+    color: var(--color-primary);
     margin: 0 16px;
     text-align: left;
 }
-.job__name, .job__description {
-    color: var(--color-dark-grey);
-}
+
 .job__name {
-    font-size: var(--font-small);
+    color: var(--color-primary);
 }
 .job__period {
-    font-size: var(--font-micro);
+    font-size: 0.8rem
 }
 
 /* Skill */
 #skills {
-    background-color: var(--color-sour-lemon);
+    background-color: var(--color-primary-variant);
+    color: var(--color-text);
 }
+
 .skillset {
     display: flex;
-    background-color: var(--color-soothing-grey);
     color: var(--color-text);
-    margin: 20px 0;
-    border-radius: 20px;
+    margin: 2rem 3rem;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 40px 0 rgba(0,0,0,.45)
 }
+
+.skillset__left {
+    flex-basis: 55%;
+    background-color: var(--color-primary);
+    padding: 1rem;
+}
+
+.skillset__right {
+    flex-basis: 45%;
+    background-color: var(--color-primary);
+    filter: brightness(150%);
+}
+
+.tools {
+    padding: 1rem;
+    background-color: var(--color-primary-variant);
+}
+
+.tools__list {
+    padding-bottom: 1rem;
+}
+
+.etc {
+    padding: 1rem;
+}
+
 .skillset__title {
-    color: var(--color-text);
+    color: var(--color-accent);
+    margin: 1rem 0;
+    font-size: 1.2rem;
 }
+
 .skill__description {
     display: flex;
     justify-content: space-between;
    
 }
+
 .skill {
     margin-bottom: 32px;
 }
 .skill__bar {
     width: 100%;
     height: 3px;
-    background-color: var(--color-dark-grey);
+    background-color: var(--color-primary-variant);
 }
 .skill__value {
     height: 3px;
-    background-color: var(--color-orange-villege);
+    background-color: var(--color-accent);
 }
-.skillset__left {
-    flex-basis: 60%;
-    background-color: var(--color-dracular-black);
-    padding: 20px 40px;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
-}
-.skillset__right {
-    flex-basis: 40%;
-    
-}
-.tools {
-    background-color: var(--color-dark-grey);
-    border-top-right-radius: 20px;
-}
-.tools, .etc {
-    padding: 20px;
-}
+
+
 
 /* Work */
 .category__btn {
