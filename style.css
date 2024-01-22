@@ -57,7 +57,6 @@ h1,h2,h3,p,ul {
 
 a {
     text-decoration: none;
-    color: var(--color-text);
 }
 
 ul {
@@ -102,7 +101,7 @@ button {
     width: 100%;
     justify-content: space-between;
     align-items: center;
-    background-color: transparent;
+    background-color: var(--color-primary);
     color: var(--color-text);
     padding: 8px;
 }
@@ -185,7 +184,7 @@ button {
 .about__majors {
     display: flex;
     justify-content: space-between;
-    gap: 8rem;
+    gap: 1rem;
     margin: 2.5rem 0;
 }
 
@@ -269,7 +268,7 @@ button {
     background-color: var(--color-primary-variant);
 }
 
-.tools__list {
+.tools__list, .etc__list {
     padding-bottom: 1rem;
 }
 
@@ -378,6 +377,7 @@ button {
 }
 
 .project__description {
+    color: var(--color-text);
     position: absolute;
     width: 100%;
     height: 100%;
@@ -414,21 +414,89 @@ button {
 
 /* Contact */
 #contact {
-    background-color: var(--color-first-date);
+    color: var(--color-primary);
 }
-.contact__title,
-.contact__email {
-    color: var(--color-text);
-} 
+
 .contact__title {
-    margin: 32px 0;
+    font-weight:bolder;
+    font-size: 2rem;
 }
+
+.contact__email {
+    font-size: 1.2rem;
+    margin: 0.8rem 0;
+}
+
 .contact__links {
-    font-size: var(--font-large);
-    margin: 24px 0;
+    color: var(--color-primary);
+    font-size: 1.5rem;
     transition: all 300ms ease-in;
 }
+
 .contact__links i:hover {
     transform: scale(1.1);
-    color: var(--color-sour-lemon);
+    color: var(--color-accent-variant);
+}
+
+.fa-github, .fa-linkedin {
+    color: var(--color-primary);
+}
+
+@media screen and (max-width: 768px) {
+    .section {
+        padding: 3rem 2rem;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+    
+    .description {
+        font-size: 1rem;
+    }
+
+    #navbar {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .navbar__menus {
+        width: 100%;
+        text-align: center;
+        padding: 1rem 4rem;
+        gap: 1rem;
+    }
+
+    .navbar__menu {
+        flex-direction: column;
+    }
+
+    #home {
+        padding-top: 3rem;
+    }
+    
+    .home__avatar {
+        margin-top: 2rem;
+    }
+    .home__title {
+        font-size: 2.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .about__majors {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .major {
+        max-width: 25rem;
+    }
+
+    .job {
+        justify-content: center;
+    }
+
+    .skillset {
+        flex-direction: column;
+    }
 }
