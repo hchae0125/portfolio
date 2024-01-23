@@ -101,9 +101,15 @@ button {
     width: 100%;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--color-primary);
+    background-color: transparent;
     color: var(--color-text);
     padding: 8px;
+    z-index: 1;
+    transition: all 300ms ease;
+}
+
+.navbar--dark {
+    background-color: var(--color-primary) !important; 
 }
 
 .navbar__logo {
