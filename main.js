@@ -23,3 +23,15 @@ document.addEventListener('scroll', () => {
     arrow.style.opacity =  scrollY > homeHeight / 2 ? 1 : 0;
 });
 
+
+// toggle button
+const navMenu = document.querySelector('.navbar__menus');
+const navTogle = document.querySelector('.navbar__toggle');
+
+navTogle.addEventListener('click', () => {
+    navMenu.classList.toggle('open');
+});
+
+navMenu.addEventListener('click', () => {
+    navMenu.classList.remove('open');
+});
