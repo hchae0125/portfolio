@@ -23,7 +23,9 @@
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Open+Sans&family=Poppins:wght@200;300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <script src="main.js" defer></script>
+    <script type="module" src="main.js" defer></script>
+    <script type="module" src="projects.js" defer></script>
+    <script type="module" src="active_menu.js" defer></script>
 </head>
 
 <body>
@@ -38,18 +40,18 @@
         </button>
         <div class="navbar__menus">
             <ul class="navbar__menu">
-                <li class="navbar__menu__item active"><a href="#home">Home</a></li>
-                <li class="navbar__menu__item"><a href="#about">About</a></li>
-                <li class="navbar__menu__item"><a href="#skills">Skills</a></li>
-                <li class="navbar__menu__item"><a href="#work">My Work</a></li>
-                <li class="navbar__menu__item"><a href="#contact">Contact</a></li>
+                <li><a class="navbar__menu__item" href="#home">Home</a></li>
+                <li><a class="navbar__menu__item" href="#about">About</a></li>
+                <li><a class="navbar__menu__item" href="#skills">Skills</a></li>
+                <li><a class="navbar__menu__item" href="#work">My Work</a></li>
+                <li><a class="navbar__menu__item" href="#contact">Contact</a></li>
             </ul>
         </div>
     </nav>
     <!-- Home -->
     <section id="home">
         <div class="home__container">
-            <img src="imgs/profile_picture.PNG" alt="Haneul's profile photo" class="home__avatar" />
+            <img src="imgs/profile_picture.png" alt="Haneul's profile photo" class="home__avatar" />
             <h2 class="home__title">Hello</br>I&#39;m a <strong class="home__title__strong">Front-end Developer</strong>, Haneul</h2>
             <p class="home__description">Currently residing in New Jersey, US</p>
             <button class="home__contact">Contact Me</button>
