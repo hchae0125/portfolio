@@ -23,6 +23,9 @@
     --color-orange: #fd6413;
     --color-gray: #1b1e26;
 
+    /* Background */
+    --home-bg-gradient: linear-gradient(180deg, rgba(10,26,56,1) 0%, rgba(5,10,19,1) 100%);
+
     /* Font size */
     --font-large: 48px;
     --font-medium: 28px;
@@ -110,7 +113,7 @@ button {
     width: 100%;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--color-primary);
+    background-color: transparent;
     color: var(--color-text);
     padding: 0.5rem 1.5rem;
     z-index: 1;
@@ -163,11 +166,12 @@ button {
 /* Home */
 #home {
     position: relative;
-    background: var(--color-primary);
     color: var(--color-text);
     padding: 5rem 1rem;
     padding-top: 7rem;
     text-align: center;
+    background: var(--color-primary);
+    background: var(--home-bg-gradient);
 }
 
 #home::after {
