@@ -22,10 +22,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@200;300&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Open+Sans&family=Poppins:wght@200;300&display=swap" rel="stylesheet">
+
+    <!-- Type it -->
+    <script src="https://unpkg.com/typeit@8.0.1/dist/index.umd.js"></script>
+
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- Javascript -->
     <script type="module" src="main.js" defer></script>
     <script type="module" src="projects.js" defer></script>
     <script type="module" src="active_menu.js" defer></script>
+    <script type="module" src="typeit.js" defer></script>
 </head>
 
 <body>
@@ -50,11 +58,13 @@
     </nav>
     <!-- Home -->
     <section id="home">
-        <div class="home__container">
+        <div class="section__container home__container">
             <img src="imgs/profile_picture.png" alt="Haneul's profile photo" class="home__avatar" />
-            <h2 class="home__title">Hello</br>I&#39;m a <strong class="home__title__strong">Front-end Developer</strong>, Haneul</h2>
-            <p class="home__description">Currently residing in New Jersey, US</p>
-            <a class="home__contact" href="#contact">Contact Me</a>
+            <div>
+                <h2 class="home__title">Hello</br>I&#39;m a <strong class="home__title__strong">Front-end Developer</strong>, Haneul</h2>
+                <p class="home__description">Currently residing in New Jersey, US</p>
+                <a class="home__contact" href="#contact">Contact Me</a>    
+            </div>
         </div>
             
     </section>
